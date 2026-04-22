@@ -7,7 +7,6 @@ events = [
     {"id": 1, "name": "Tech Conference", "date": "10 May 2026", "venue": "Auditorium", "rsvp": 0},
     {"id": 2, "name": "Music Fest", "date": "15 May 2026", "venue": "Open Ground", "rsvp": 0},
 ]
-
 @app.route('/')
 def index():
     return render_template('index.html')
