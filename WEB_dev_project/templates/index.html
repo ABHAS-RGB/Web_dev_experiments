@@ -1,0 +1,309 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gender Sensitization Platform</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <h1>GenderSense</h1>
+                    </div>
+                   <ul class="nav-links">
+                        <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('resources') }}">Resources</a></li>
+                         <li><a href="{{ url_for('glossary') }}">Glossary</a></li>
+                          <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
+                              <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                                </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!--Hero Section-->
+            <section id="home" class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Building a Gender-Inclusive Society</h1>
+                        <p>Learn, engage, and contribute to creating a more inclusive environment where everyone feels valued regardless of gender identity.</p>
+                        <div class="hero-buttons">
+                            <a href="{{ url_for('resources') }}" class="btn btn-primary">Explore Resources</a>
+                            <a href="{{ url_for('quiz') }}" class="btn btn-accent">Take the Quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Understanding Gender Sensitization</h2>
+                        <p>Awareness and respect for all gender identities and expressions</p>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Gender sensitization is the process of understanding and being aware of the socially determined differences between men and women, including how they're expected to think and act.</p>
+                            <p>Our mission is to promote gender equality by challenging stereotypes, addressing biases, and fostering inclusive behaviors in all aspects of life.</p>
+                            <p>Through education and interactive experiences, we aim to create a society where every person is respected and valued regardless of their gender identity.</p>
+                        </div>
+                        <div class="about-features">
+                            <div class="feature">
+                                <div class="feature-icon">🏫</div>
+                                <h3>Education</h3>
+                                <p>Access comprehensive learning resources about gender-related concepts</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔍</div>
+                                <h3>Awareness</h3>
+                                <p>Understand gender biases and their impact on society</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🤝</div>
+                                <h3>Action</h3>
+                                <p>Learn practical steps to promote gender equality in daily life</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section id="resources" class="resources">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Educational Resources</h2>
+                        <p>Materials to help understand gender concepts and promote equality</p>
+                    </div>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">📚</div>
+                            <h3>Gender Concepts</h3>
+                            <p>Understanding fundamental terminology and concepts related to gender identity and expression.</p>
+                            <a href="#" class="resource-link">Learn More</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">🏢</div>
+                            <h3>Workplace Equality</h3>
+                            <p>Resources for creating inclusive workplaces where all genders can thrive equally.</p>
+                            <a href="#" class="resource-link">Learn More</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">🧠</div>
+                            <h3>Unconscious Bias</h3>
+                            <p>Understanding and overcoming implicit biases related to gender in our thinking.</p>
+                            <a href="#" class="resource-link">Learn More</a>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">📝</div>
+                            <h3>Inclusive Language</h3>
+                            <p>Guidelines for using language that respects all gender identities.</p>
+                            <a href="#" class="resource-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Glossary Section -->
+            <section id="glossary" class="glossary">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Gender Terminology Glossary</h2>
+                        <p>Understanding the language of gender identity and expression</p>
+                    </div>
+                    <div class="glossary-content">
+                        <div class="glossary-item">
+                            <h3>Gender Identity</h3>
+                            <p>One's internal, deeply held sense of one's gender as male, female, neither, both, or something else entirely.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h3>Gender Expression</h3>
+                            <p>External manifestations of gender, expressed through one's name, pronouns, clothing, haircut, behavior, voice, or body characteristics.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h3>Gender Equality</h3>
+                            <p>The state in which access to rights or opportunities is unaffected by gender.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h3>Gender Stereotype</h3>
+                            <p>Oversimplified generalizations about the characteristics, differences, and roles of individuals or groups based on gender.</p>
+                        </div>
+                        <div class="glossary-item">
+                            <h3>Non-Binary</h3>
+                            <p>A spectrum of gender identities that are not exclusively masculine or feminine, and thus outside the gender binary.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz Section -->
+            <section id="quiz" class="quiz">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Test Your Knowledge</h2>
+                        <p>Interactive quiz on gender sensitization concepts</p>
+                    </div>
+                    <div class="quiz-intro">
+                        <p>Ready to see how much you know about gender sensitization concepts? Take our interactive quiz to test your knowledge and learn more about creating inclusive environments.</p>
+                        <div class="quiz-buttons">
+                            <a href="satndalonequize page.html" class="btn btn-primary quiz-start-btn">Take Standalone Quiz</a>
+                            <p style="margin: 10px 0; font-size: 0.9em; opacity: 0.8;">Our improved quiz with built-in results (recommended)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Get in Touch</h2>
+                        <p>Have questions or suggestions? We'd love to hear from you.</p>
+                    </div>
+                    <div class="contact-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>GenderSense</h2>
+                        <p>Building a more inclusive society through education and awareness.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="resource.html">Resources</a></li>
+                            <li><a href="#glossary">Glossary</a></li>
+                            <li><a href="quiz-standalone.html">Quiz</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p>Email: 2401010037@KRMU.EDU.IN.org</p>
+                        <p>Phone: 2401010037</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 GenderSense. All rights reserved.</p>
+                </div>
+            </div>
+             <!-- Jotform Chatbot Embed -->
+        <div id="chatbot-container">
+            <script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            window.AgentInitializer.init({
+                agentRenderURL: "https://agent.jotform.com/0195f23478cb7ff7ba04eb5fe8b99b02e838",
+                rootId: "JotformAgent-0195f23478cb7ff7ba04eb5fe8b99b02e838",
+                formID: "0195f23478cb7ff7ba04eb5fe8b99b02e838",
+                queryParams: ["skipWelcome=1", "maximizable=1"],
+                domain: "https://www.jotform.com",
+                isDraggable: false,
+                background: "linear-gradient(180deg, #6C73A8 0%, #6C73A8 100%)",
+                buttonBackgroundColor: "#0066C3",
+                buttonIconColor: "#FFFFFF",
+                variant: false,
+                customizations: {
+                    "greeting": "Yes",
+                    "greetingMessage": "Hi! How can I assist you?",
+                    "openByDefault": "No",
+                    "pulse": "Yes",
+                    "position": "right",
+                    "autoOpenChatIn": "0"
+                },
+                isVoice: false,
+            });
+        });
+    </script>
+            </script>
+        </div>
+        <script src="{{ url_for('static', filename='logic.js') }}"></script>
+        </footer>
+
+        <script>
+            
+            // Simple JavaScript for mobile navigation toggle
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.querySelector('.hamburger');
+                const navLinks = document.querySelector('.nav-links');
+                
+                hamburger.addEventListener('click', function() {
+                    navLinks.classList.toggle('show');
+                    hamburger.classList.toggle('active');
+                });
+
+                // Close mobile menu when clicking on a nav link
+                const navItems = document.querySelectorAll('.nav-links a');
+                navItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        if (navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                            hamburger.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+    </html> -->
+
+
+
+    <!-- 
+    To push your code directly through VS Code, follow these steps:
+
+    1. Open the Source Control panel (click the branch icon on the sidebar or press `Ctrl+Shift+G`).
+    2. If your folder is not already a git repository, click "Initialize Repository".
+    3. Stage your changes by clicking the "+" next to the files or "Stage All Changes".
+    4. Enter a commit message in the message box and click the checkmark to commit.
+    5. If you haven't set a remote, open the terminal (`Ctrl+``) and run:
+        git remote add origin <your-repo-URL>
+    6. Push your code by clicking the "..." menu and selecting "Push", or run:
+        git push -u origin main
+
+    Make sure you have Git installed and are signed in if using GitHub.
+    -->

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Sensitization Glossary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>GenderSense</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="indexmain.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resource.html">Resources</a></li>
+                    <li><a href="gloassry.html" class="active">Glossary</a></li>
+                    <li><a href="satndalonequize page.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="glossary-hero">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Gender Terminology Glossary</h1>
+                    <p>Understanding the language of gender identity and expression</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="glossary-content">
+            <div class="container">
+                <div class="glossary-grid">
+                    <div class="glossary-item">
+                        <h3>Gender Identity</h3>
+                        <p>One's internal, deeply held sense of one's gender as male, female, neither, both, or something else entirely.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h3>Gender Expression</h3>
+                        <p>External manifestations of gender, expressed through one's name, pronouns, clothing, haircut, behavior, voice, or body characteristics.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h3>Gender Equality</h3>
+                        <p>The state in which access to rights or opportunities is unaffected by gender.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h3>Gender Stereotype</h3>
+                        <p>Oversimplified generalizations about the characteristics, differences, and roles of individuals or groups based on gender.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h3>Non-Binary</h3>
+                        <p>A spectrum of gender identities that are not exclusively masculine or feminine, and thus outside the gender binary.</p>
+                    </div>
+                    <div class="glossary-item">
+                        <h3>Gender Fluid</h3>
+                        <p>A gender identity that varies over time and can include identifying as male, female, or non-binary at different times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GenderSense</h2>
+                    <p>Building a more inclusive society through education and awareness.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="indexmain.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resource.html">Resources</a></li>
+                        <li><a href="gloassry.html">Glossary</a></li>
+                        <li><a href="satndalonequize page.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: 2401010037@KRMU.EDU.IN.org</p>
+                    <p>Phone: 2401010037</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GenderSense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+                hamburger.classList.toggle('active');
+            });
+
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (navLinks.classList.contains('show')) {
+                        navLinks.classList.remove('show');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

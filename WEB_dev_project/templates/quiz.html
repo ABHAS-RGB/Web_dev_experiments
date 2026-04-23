@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gender Sensitization Quiz</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylequize.css') }}" />
+        
+            <link rel="stylesheet " href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+            
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylequize.css') }}" />
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <h1>GenderSense</h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resource.html">Resources</a></li>
+                        <li><a href="gloassry.html">Glossary</a></li>
+                        <li><a href="#" class="active">Quiz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="quiz-hero">
+                <div class="container">
+                    <div class="quiz-hero-content">
+                        <h1>Test Your Knowledge</h1>
+                        <p>
+                            Take our interactive quiz to test your understanding
+                            of gender sensitization concepts.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="quiz-container">
+                    <!-- Quiz Section -->
+                    <div id="quiz-section" class="quiz-section active">
+                        <div class="quiz-wrapper">
+                            <div class="quiz-header">
+                                <h2>Gender Sensitization Quiz</h2>
+                                <p>
+                                    Answer the following questions to test your
+                                    knowledge.
+                                </p>
+                            </div>
+
+                            <div class="quiz-progress">
+                                <div class="progress-label">
+                                    Question
+                                    <span id="current-question">1</span> of
+                                    <span id="total-questions">10</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div
+                                        class="progress-fill"
+                                        style="width: 10%"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-content">
+                                <!-- Questions will be dynamically inserted here -->
+                                <div
+                                    class="quiz-question active"
+                                    data-question="1"
+                                >
+                                    <h2>
+                                        What does gender sensitization primarily
+                                        aim to achieve?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q1-a"
+                                                name="q1"
+                                                value="a"
+                                            />
+                                            <label for="q1-a"
+                                                >Establishing gender dominance
+                                                in society</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q1-b"
+                                                name="q1"
+                                                value="b"
+                                            />
+                                            <label for="q1-b"
+                                                >Creating awareness about
+                                                gender-based discrimination and
+                                                stereotypes</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q1-c"
+                                                name="q1"
+                                                value="c"
+                                            />
+                                            <label for="q1-c"
+                                                >Enforcing gender-specific roles
+                                                in workplaces</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q1-d"
+                                                name="q1"
+                                                value="d"
+                                            />
+                                            <label for="q1-d"
+                                                >Promoting segregation based on
+                                                gender identities</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="2">
+                                    <h2>
+                                        Which of the following is an example of
+                                        a gender stereotype?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q2-a"
+                                                name="q2"
+                                                value="a"
+                                            />
+                                            <label for="q2-a"
+                                                >People have different learning
+                                                styles</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q2-b"
+                                                name="q2"
+                                                value="b"
+                                            />
+                                            <label for="q2-b"
+                                                >All individuals have unique
+                                                personalities</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q2-c"
+                                                name="q2"
+                                                value="c"
+                                            />
+                                            <label for="q2-c"
+                                                >Women are naturally better at
+                                                caregiving than men</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q2-d"
+                                                name="q2"
+                                                value="d"
+                                            />
+                                            <label for="q2-d"
+                                                >People's abilities vary
+                                                regardless of gender</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="3">
+                                    <h2>
+                                        What is meant by 'gender-neutral
+                                        language'?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q3-a"
+                                                name="q3"
+                                                value="a"
+                                            />
+                                            <label for="q3-a"
+                                                >Language that only uses male
+                                                pronouns</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q3-b"
+                                                name="q3"
+                                                value="b"
+                                            />
+                                            <label for="q3-b"
+                                                >Language that only uses female
+                                                pronouns</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q3-c"
+                                                name="q3"
+                                                value="c"
+                                            />
+                                            <label for="q3-c"
+                                                >Language that alternates
+                                                between male and female
+                                                terms</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q3-d"
+                                                name="q3"
+                                                value="d"
+                                            />
+                                            <label for="q3-d"
+                                                >Language that avoids bias
+                                                towards a particular
+                                                gender</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="4">
+                                    <h2>
+                                        Which of the following best describes
+                                        'gender equity'?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q4-a"
+                                                name="q4"
+                                                value="a"
+                                            />
+                                            <label for="q4-a"
+                                                >Treating all genders exactly
+                                                the same in all
+                                                circumstances</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q4-b"
+                                                name="q4"
+                                                value="b"
+                                            />
+                                            <label for="q4-b"
+                                                >Giving women more opportunities
+                                                than men</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q4-c"
+                                                name="q4"
+                                                value="c"
+                                            />
+                                            <label for="q4-c"
+                                                >Giving men and women separate
+                                                but equal facilities</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q4-d"
+                                                name="q4"
+                                                value="d"
+                                            />
+                                            <label for="q4-d"
+                                                >Fairness of treatment according
+                                                to respective needs of different
+                                                genders</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="5">
+                                    <h2>
+                                        What is a major benefit of
+                                        gender-inclusive workplaces?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q5-a"
+                                                name="q5"
+                                                value="a"
+                                            />
+                                            <label for="q5-a"
+                                                >Lower operational costs</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q5-b"
+                                                name="q5"
+                                                value="b"
+                                            />
+                                            <label for="q5-b"
+                                                >Diverse perspectives leading to
+                                                better decision-making</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q5-c"
+                                                name="q5"
+                                                value="c"
+                                            />
+                                            <label for="q5-c"
+                                                >Less competition for leadership
+                                                positions</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q5-d"
+                                                name="q5"
+                                                value="d"
+                                            />
+                                            <label for="q5-d"
+                                                >Simplified human resource
+                                                policies</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="6">
+                                    <h2>
+                                        Gender sensitization training in
+                                        educational institutions helps to:
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q6-a"
+                                                name="q6"
+                                                value="a"
+                                            />
+                                            <label for="q6-a"
+                                                >Separate boys and girls into
+                                                different learning groups</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q6-b"
+                                                name="q6"
+                                                value="b"
+                                            />
+                                            <label for="q6-b"
+                                                >Create gender-specific
+                                                curriculum</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q6-c"
+                                                name="q6"
+                                                value="c"
+                                            />
+                                            <label for="q6-c"
+                                                >Foster an inclusive learning
+                                                environment for all
+                                                students</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q6-d"
+                                                name="q6"
+                                                value="d"
+                                            />
+                                            <label for="q6-d"
+                                                >Establish different achievement
+                                                standards based on gender</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="7">
+                                    <h2>
+                                        What is meant by 'unconscious gender
+                                        bias'?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q7-a"
+                                                name="q7"
+                                                value="a"
+                                            />
+                                            <label for="q7-a"
+                                                >Deliberately discriminating
+                                                against a particular
+                                                gender</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q7-b"
+                                                name="q7"
+                                                value="b"
+                                            />
+                                            <label for="q7-b"
+                                                >Automatic, unintentional
+                                                attitudes affecting our
+                                                judgments based on gender</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q7-c"
+                                                name="q7"
+                                                value="c"
+                                            />
+                                            <label for="q7-c"
+                                                >Having no opinions about gender
+                                                issues</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q7-d"
+                                                name="q7"
+                                                value="d"
+                                            />
+                                            <label for="q7-d"
+                                                >Being unaware of the concept of
+                                                gender</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="8">
+                                    <h2>
+                                        Which of the following is an important
+                                        aspect of creating gender-sensitive
+                                        healthcare?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q8-a"
+                                                name="q8"
+                                                value="a"
+                                            />
+                                            <label for="q8-a"
+                                                >Having only female doctors for
+                                                female patients</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q8-b"
+                                                name="q8"
+                                                value="b"
+                                            />
+                                            <label for="q8-b"
+                                                >Recognizing that biological and
+                                                social factors affect health
+                                                differently across
+                                                genders</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q8-c"
+                                                name="q8"
+                                                value="c"
+                                            />
+                                            <label for="q8-c"
+                                                >Creating completely separate
+                                                healthcare facilities for each
+                                                gender</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q8-d"
+                                                name="q8"
+                                                value="d"
+                                            />
+                                            <label for="q8-d"
+                                                >Focusing medical research
+                                                exclusively on women's health
+                                                issues</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="9">
+                                    <h2>
+                                        What role can media play in promoting
+                                        gender sensitization?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q9-a"
+                                                name="q9"
+                                                value="a"
+                                            />
+                                            <label for="q9-a"
+                                                >Portraying traditional gender
+                                                roles to maintain cultural
+                                                values</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q9-b"
+                                                name="q9"
+                                                value="b"
+                                            />
+                                            <label for="q9-b"
+                                                >Avoiding all content related to
+                                                gender issues</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q9-c"
+                                                name="q9"
+                                                value="c"
+                                            />
+                                            <label for="q9-c"
+                                                >Showing men and women in
+                                                diverse roles and challenging
+                                                stereotypes</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q9-d"
+                                                name="q9"
+                                                value="d"
+                                            />
+                                            <label for="q9-d"
+                                                >Creating separate content for
+                                                male and female audiences</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question" data-question="10">
+                                    <h2>
+                                        Which approach is most effective for
+                                        addressing gender-based discrimination
+                                        in the workplace?
+                                    </h2>
+                                    <div class="quiz-options">
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q10-a"
+                                                name="q10"
+                                                value="a"
+                                            />
+                                            <label for="q10-a"
+                                                >Ignoring minor incidents to
+                                                avoid creating tension</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q10-b"
+                                                name="q10"
+                                                value="b"
+                                            />
+                                            <label for="q10-b"
+                                                >Implementing clear policies,
+                                                regular training, and accessible
+                                                reporting systems</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q10-c"
+                                                name="q10"
+                                                value="c"
+                                            />
+                                            <label for="q10-c"
+                                                >Keeping men and women in
+                                                separate work areas</label
+                                            >
+                                        </div>
+                                        <div class="option">
+                                            <input
+                                                type="radio"
+                                                id="q10-d"
+                                                name="q10"
+                                                value="d"
+                                            />
+                                            <label for="q10-d"
+                                                >Leaving it to individuals to
+                                                resolve conflicts on their
+                                                own</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-navigation">
+                                <button
+                                    id="prev-btn"
+                                    class="btn btn-secondary"
+                                    disabled
+                                >
+                                    Previous
+                                </button>
+                                <button id="next-btn" class="btn btn-primary">
+                                    Next
+                                </button>
+                                <button
+                                    id="submit-btn"
+                                    class="btn btn-accent"
+                                    style="display: none"
+                                >
+                                    Submit Quiz
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results Section -->
+                    <div id="results-section" class="quiz-section">
+                        <h2>Your Quiz Results</h2>
+                        <div id="score-display">
+                            <p class="results-score">
+                                You answered <span id="score">0</span> out of
+                                <span id="total">10</span> questions correctly!
+                            </p>
+                            <div id="feedback" class="results-feedback"></div>
+                        </div>
+
+                        <div class="results-list">
+                            <h3>Question Review</h3>
+                            <div id="results-container">
+                                <!-- Results will be dynamically inserted here -->
+                            </div>
+                        </div>
+
+                        <div class="results-actions">
+                            <button id="retake-btn" class="btn btn-primary">
+                                Take Quiz Again
+                            </button>
+                            <a
+                                href="index.html#resources"
+                                class="btn btn-secondary"
+                                >Explore Resources</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>GenderSense</h2>
+                        <p>
+                            Building a more inclusive society through education
+                            and awareness.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="indexmain.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li>
+                                <a href="resource.html">Resources</a>
+                            </li>
+                            <li><a href="gloassry.html">Glossary</a></li>
+                            <li><a href="#">Quiz</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <p>Email: 2401010037@krmu.edu.in</p>
+                        <p>Phone: 2401010037</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 GenderSense. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Mobile navigation
+                const hamburger = document.querySelector(".hamburger");
+                const navLinks = document.querySelector(".nav-links");
+
+                hamburger.addEventListener("click", function () {
+                    navLinks.classList.toggle("show");
+                    hamburger.classList.toggle("active");
+                });
+
+                // Close mobile menu when clicking on a nav link
+                const navItems = document.querySelectorAll(".nav-links a");
+                navItems.forEach((item) => {
+                    item.addEventListener("click", function () {
+                        if (navLinks.classList.contains("show")) {
+                            navLinks.classList.remove("show");
+                            hamburger.classList.remove("active");
+                        }
+                    });
+                });
+
+                // Quiz functionality
+                const quizSection = document.getElementById("quiz-section");
+                const resultsSection =
+                    document.getElementById("results-section");
+                const prevBtn = document.getElementById("prev-btn");
+                const nextBtn = document.getElementById("next-btn");
+                const submitBtn = document.getElementById("submit-btn");
+                const retakeBtn = document.getElementById("retake-btn");
+                const currentQuestionElement =
+                    document.getElementById("current-question");
+                const totalQuestionsElement =
+                    document.getElementById("total-questions");
+                const progressFill = document.querySelector(".progress-fill");
+
+                const questions = document.querySelectorAll(".quiz-question");
+                const totalQuestions = questions.length;
+                let currentQuestion = 1;
+
+                // Update total questions display
+                totalQuestionsElement.textContent = totalQuestions;
+
+                // Answer key (correct answers)
+                const answers = {
+                    q1: "b",
+                    q2: "c",
+                    q3: "d",
+                    q4: "d",
+                    q5: "b",
+                    q6: "c",
+                    q7: "b",
+                    q8: "b",
+                    q9: "c",
+                    q10: "b",
+                };
+
+                // Initialize user answers object
+                let userAnswers = {};
+
+                // Function to show a specific question with smooth transition
+                function showQuestion(questionNumber) {
+                    // First hide all questions but don't remove them from display yet
+                    questions.forEach((question) => {
+                        question.style.opacity = "0";
+                        question.style.transform = "translateY(20px)";
+                    });
+                    
+                    // Wait for the fade-out animation
+                    setTimeout(() => {
+                        // Now completely hide all questions
+                        questions.forEach((question) => {
+                            question.classList.remove("active");
+                        });
+                        
+                        // Show the current question
+                        const currentQuestionElement = document.querySelector(
+                            `.quiz-question[data-question="${questionNumber}"]`,
+                        );
+                        
+                        if (currentQuestionElement) {
+                            // Add the active class
+                            currentQuestionElement.classList.add("active");
+                            
+                            // Trigger reflow to ensure the transition works
+                            void currentQuestionElement.offsetWidth;
+                            
+                            // Apply the transition by setting opacity and transform
+                            currentQuestionElement.style.opacity = "1";
+                            currentQuestionElement.style.transform = "translateY(0)";
+                        }
+                        
+                        // Update question counter
+                        document.getElementById("current-question").textContent =
+                            questionNumber;
+                    }, 300); // Timing for the transition
+
+                    // Update progress bar
+                    const progressPercentage =
+                        ((questionNumber - 1) / totalQuestions) * 100;
+                    progressFill.style.width = `${progressPercentage}%`;
+
+                    // Enable/disable navigation buttons
+                    prevBtn.disabled = questionNumber === 1;
+
+                    if (questionNumber === totalQuestions) {
+                        nextBtn.style.display = "none";
+                        submitBtn.style.display = "block";
+                    } else {
+                        nextBtn.style.display = "block";
+                        submitBtn.style.display = "none";
+                    }
+
+                    // Check if the current question has been answered
+                    const radioName = `q${questionNumber}`;
+                    const selectedOption = document.querySelector(
+                        `input[name="${radioName}"]:checked`,
+                    );
+
+                    if (selectedOption) {
+                        userAnswers[radioName] = selectedOption.value;
+                    }
+                }
+
+                // Event listeners for navigation buttons
+                prevBtn.addEventListener("click", function () {
+                    if (currentQuestion > 1) {
+                        currentQuestion--;
+                        showQuestion(currentQuestion);
+                    }
+                });
+
+                nextBtn.addEventListener("click", function () {
+                    // Save the current answer
+                    const radioName = `q${currentQuestion}`;
+                    const selectedOption = document.querySelector(
+                        `input[name="${radioName}"]:checked`,
+                    );
+
+                    if (selectedOption) {
+                        userAnswers[radioName] = selectedOption.value;
+                    }
+
+                    if (currentQuestion < totalQuestions) {
+                        currentQuestion++;
+                        showQuestion(currentQuestion);
+                    }
+                });
+
+                // Event listener for submit button
+                submitBtn.addEventListener("click", function () {
+                    // Save the current answer
+                    const radioName = `q${currentQuestion}`;
+                    const selectedOption = document.querySelector(
+                        `input[name="${radioName}"]:checked`,
+                    );
+
+                    if (selectedOption) {
+                        userAnswers[radioName] = selectedOption.value;
+                    }
+
+                    // Calculate score
+                    let score = 0;
+                    let results = [];
+
+                    for (let i = 1; i <= totalQuestions; i++) {
+                        const questionKey = `q${i}`;
+                        if (userAnswers[questionKey] === answers[questionKey]) {
+                            score++;
+                        }
+
+                        const questionText = document.querySelector(
+                            `.quiz-question[data-question="${i}"] h2`,
+                        ).textContent;
+                        const userAnswer = userAnswers[questionKey]
+                            ? document.querySelector(
+                                  `#${questionKey}-${userAnswers[questionKey]}`,
+                              ).nextElementSibling.textContent
+                            : "Not answered";
+                        const correctAnswer = document.querySelector(
+                            `#${questionKey}-${answers[questionKey]}`,
+                        ).nextElementSibling.textContent;
+
+                        results.push({
+                            question: questionText,
+                            userAnswer: userAnswer,
+                            correctAnswer: correctAnswer,
+                            correct:
+                                userAnswers[questionKey] ===
+                                answers[questionKey],
+                        });
+                    }
+
+                    // Display results
+                    displayResults(score, totalQuestions, results);
+
+                    // Switch to results section with transition
+                    quizSection.style.opacity = "0";
+                    quizSection.style.transform = "translateY(20px)";
+                    
+                    // Wait for fade-out
+                    setTimeout(() => {
+                        quizSection.classList.remove("active");
+                        resultsSection.classList.add("active");
+                        
+                        // Trigger reflow
+                        void resultsSection.offsetWidth;
+                        
+                        // Fade in results
+                        resultsSection.style.opacity = "1";
+                        resultsSection.style.transform = "translateY(0)";
+                    }, 300);
+                });
+
+                // Function to display results
+                function displayResults(score, totalQuestions, results) {
+                    // Update score display
+                    document.getElementById("score").textContent = score;
+                    document.getElementById("total").textContent =
+                        totalQuestions;
+
+                    // Add feedback based on score
+                    const feedbackElement = document.getElementById("feedback");
+                    const scorePercentage = (score / totalQuestions) * 100;
+
+                    if (scorePercentage >= 80) {
+                        feedbackElement.textContent =
+                            "Excellent! You have a strong understanding of gender sensitization concepts.";
+                        feedbackElement.classList.add("results-excellent");
+                    } else if (scorePercentage >= 60) {
+                        feedbackElement.textContent =
+                            "Good job! You have a decent understanding of gender sensitization concepts, but there is room for improvement.";
+                        feedbackElement.classList.add("results-good");
+                    } else {
+                        feedbackElement.textContent =
+                            "You might benefit from learning more about gender sensitization concepts. Check out our resources section!";
+                        feedbackElement.classList.add(
+                            "results-needs-improvement",
+                        );
+                    }
+
+                    // Display individual question results
+                    const resultsContainer =
+                        document.getElementById("results-container");
+                    resultsContainer.innerHTML = ""; // Clear existing results
+
+                    results.forEach((result, index) => {
+                        const resultItem = document.createElement("div");
+                        resultItem.classList.add("result-item");
+
+                        const resultHTML = `
+                        <div class="result-question">${index + 1}. ${result.question}</div>
+                        <div class="result-answer">Your answer: <span class="${result.correct ? "result-correct" : "result-incorrect"}">${result.userAnswer}</span></div>
+                        ${!result.correct ? `<div class="result-answer">Correct answer: <span class="result-correct">${result.correctAnswer}</span></div>` : ""}
+                    `;
+
+                        resultItem.innerHTML = resultHTML;
+                        resultsContainer.appendChild(resultItem);
+                    });
+                }
+
+                // Event listener for retake button
+                retakeBtn.addEventListener("click", function () {
+                    // Reset user answers
+                    userAnswers = {};
+
+                    // Uncheck all radio buttons
+                    document
+                        .querySelectorAll('input[type="radio"]')
+                        .forEach((radio) => {
+                            radio.checked = false;
+                        });
+
+                    // Reset current question
+                    currentQuestion = 1;
+                    showQuestion(currentQuestion);
+
+                    // Switch back to quiz section with transition
+                    resultsSection.style.opacity = "0";
+                    resultsSection.style.transform = "translateY(20px)";
+                    
+                    // Wait for fade-out
+                    setTimeout(() => {
+                        resultsSection.classList.remove("active");
+                        quizSection.classList.add("active");
+                        
+                        // Trigger reflow
+                        void quizSection.offsetWidth;
+                        
+                        // Fade in quiz
+                        quizSection.style.opacity = "1";
+                        quizSection.style.transform = "translateY(0)";
+                    }, 300);
+                });
+
+                // Initialize quiz
+                showQuestion(currentQuestion);
+            });
+        </script>
+    </body>
+</html>

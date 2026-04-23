@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Gender Sensitization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='resource.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>GenderSense</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="indexmain.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="active">Resources</a></li>
+                    <li><a href="gloassry.html">Glossary</a></li>
+                    <li><a href="satndalonequize page.html">Quiz</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Gender Sensitization Resources</h1>
+                    <p>Explore educational materials, research, and tools to enhance understanding of gender sensitization concepts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-container">
+            <div class="container">
+                <div class="resource-intro">
+                    <p>Discover a curated collection of valuable resources on gender sensitization topics. These materials can help you better understand gender issues, challenge stereotypes, and promote inclusivity in various contexts.</p>
+                </div>
+                
+                <div class="resource-filters">
+                    <button class="filter-btn active" data-filter="all">All Resources</button>
+                    <button class="filter-btn" data-filter="article">Articles</button>
+                    <button class="filter-btn" data-filter="video">Videos</button>
+                    <button class="filter-btn" data-filter="toolkit">Toolkits</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="course">Courses</button>
+                </div>
+                
+                <div class="resource-grid">
+                    <!-- Resource 1 -->
+                    <div class="resource-card" data-type="article">
+                        <div class="resource-img">
+                            <span>📰</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Understanding Gender Identity and Expression</h3>
+                            <p>A comprehensive introduction to gender concepts, including definitions, historical context, and evolving understandings of gender identity and expression.</p>
+                            <a href="https://www.un.org/en/gender-inclusive-language/guidelines.shtml" class="resource-link" target="_blank">Read Article</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Article</span>
+                                <span class="resource-date">Updated: March 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 2 -->
+                    <div class="resource-card" data-type="video">
+                        <div class="resource-img">
+                            <span>🎥</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender Stereotypes in Media</h3>
+                            <p>This video series examines how gender stereotypes are perpetuated through various media forms and provides critical analysis tools for identifying and challenging these representations.</p>
+                            <a href="https://www.youtube.com/watch?v=nWu44AqF0iI" class="resource-link" target="_blank">Watch Video</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Video</span>
+                                <span class="resource-date">Duration: 45 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 3 -->
+                    <div class="resource-card" data-type="toolkit">
+                        <div class="resource-img">
+                            <span>🧰</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Creating Gender-Inclusive Workplaces</h3>
+                            <p>A practical toolkit for organizations seeking to implement gender-inclusive policies, practices, and culture. Includes templates, checklists, and implementation guidelines.</p>
+                            <a href="https://www.ilo.org/wcmsp5/groups/public/---dgreports/---gender/documents/publication/wcms_192021.pdf" class="resource-link" target="_blank">Download Toolkit</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Toolkit</span>
+                                <span class="resource-date">37 pages</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 4 -->
+                    <div class="resource-card" data-type="research">
+                        <div class="resource-img">
+                            <span>📊</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>The Impact of Gender Sensitization Training in Educational Settings</h3>
+                            <p>This research paper examines the effectiveness of gender sensitization programs in schools and universities, with evidence-based recommendations for educators.</p>
+                            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7058507/" class="resource-link" target="_blank">Read Research</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Research</span>
+                                <span class="resource-date">Published: Jan 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 5 -->
+                    <div class="resource-card" data-type="course">
+                        <div class="resource-img">
+                            <span>🎓</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender Sensitization Certification Course</h3>
+                            <p>An online self-paced course designed for professionals in any field. Learn about gender issues, unconscious bias, inclusive language, and strategies for promoting gender equality.</p>
+                            <a href="https://www.edx.org/search?q=gender+equality" class="resource-link" target="_blank">Enroll Now</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Course</span>
+                                <span class="resource-date">8 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 6 -->
+                    <div class="resource-card" data-type="article">
+                        <div class="resource-img">
+                            <span>📚</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender-Neutral Language Guidelines</h3>
+                            <p>A comprehensive guide to using inclusive language in professional and personal communication. Includes examples, alternatives to gendered terms, and context-specific recommendations.</p>
+                            <a href="https://www.unwomen.org/en/how-we-work/gender-inclusive-language" class="resource-link" target="_blank">Read Article</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Article</span>
+                                <span class="resource-date">Updated: Feb 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 7 -->
+                    <div class="resource-card" data-type="video">
+                        <div class="resource-img">
+                            <span>🎞️</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Breaking the Binary: Gender Diversity Around the World</h3>
+                            <p>This documentary explores how different cultures around the world understand gender beyond the binary, featuring personal stories and historical contexts.</p>
+                            <a href="https://www.youtube.com/watch?v=YBQHOhMCALc" class="resource-link" target="_blank">Watch Documentary</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Video</span>
+                                <span class="resource-date">Duration: 60 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 8 -->
+                    <div class="resource-card" data-type="toolkit">
+                        <div class="resource-img">
+                            <span>👥</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender Sensitization Workshop Facilitator's Guide</h3>
+                            <p>A comprehensive toolkit for conducting effective gender sensitization workshops in various contexts, including activities, discussion prompts, and evaluation tools.</p>
+                            <a href="https://www.thecompassforsbc.org/sites/default/files/strengthening_tools/Gender_Sensitivity_Toolkit.pdf" class="resource-link" target="_blank">Download Guide</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Toolkit</span>
+                                <span class="resource-date">45 pages</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 9 -->
+                    <div class="resource-card" data-type="research">
+                        <div class="resource-img">
+                            <span>📈</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender Equality in the Workplace: Global Progress Report</h3>
+                            <p>This annual research report tracks progress on gender equality in workplaces across different sectors and countries, highlighting best practices and persistent challenges.</p>
+                            <a href="https://www.weforum.org/publications/global-gender-gap-report-2023/" class="resource-link" target="_blank">Read Report</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Research</span>
+                                <span class="resource-date">Published: Mar 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resource 10 -->
+                    <div class="resource-card" data-type="course">
+                        <div class="resource-img">
+                            <span>💻</span>
+                        </div>
+                        <div class="resource-content">
+                            <h3>Gender-Inclusive Leadership Training</h3>
+                            <p>An interactive online course for leaders and managers focusing on creating inclusive team environments, addressing bias in decision-making, and promoting gender diversity.</p>
+                            <a href="https://www.coursera.org/learn/gender-and-sexuality" class="resource-link" target="_blank">Enroll Now</a>
+                            <div class="resource-meta">
+                                <span class="resource-type">Course</span>
+                                <span class="resource-date">10 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GenderSense</h2>
+                    <p>Building a more inclusive society through education and awareness.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="indexmain.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="gloassry.html">Glossary</a></li>
+                        <li><a href="quiz-standalone.html">Quiz</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: 2401010012@krmu.edu.in</p>
+                    <p>Phone: 2401010012</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GenderSense. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', function() {
+                navLinks.classList.toggle('show');
+                hamburger.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a nav link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (navLinks.classList.contains('show')) {
+                        navLinks.classList.remove('show');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Resource filtering functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const resourceCards = document.querySelectorAll('.resource-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter resource cards
+                    resourceCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-type') === filterValue) {
+                            card.style.display = 'block';
+                            // Add a small delay for a staggered animation effect
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50 * Array.from(resourceCards).indexOf(card));
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
